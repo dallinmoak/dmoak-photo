@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
-  def contact
+  def home
   end
-
-  def portfolio
+  
+  def contact
   end
 
   def social
