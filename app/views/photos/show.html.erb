@@ -1,14 +1,12 @@
-<p id="notice"><%= notice %></p>
+<%= image_tag @photo.image_url %>
+<%= @photo.caption %>
 
-<p>
-  <strong>Image url:</strong>
-  <%= image_tag @photo.image_url %>
-</p>
+<% if admin_signed_in? %>
+  <button>
+    <%= link_to 'Edit', edit_photo_path(@photo) %>
+  </button>
+<% end %>
 
-<p>
-  <strong>Caption:</strong>
-  <%= @photo.caption %>
-</p>
-
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+<button>
+  <%= link_to 'Back', photos_path %>
+</button>

@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <% if admin_signed_in? %>
+      <h1>⚠️You're in admin mode⚠️</h1>
+    <% end %>
     <%= render 'shared/nav'%>
     <%= yield %>
   </body>
