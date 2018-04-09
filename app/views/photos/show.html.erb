@@ -1,5 +1,12 @@
 <%= image_tag @photo.image_url %>
 <%= @photo.caption %>
+<% if @photo.fb_url %>
+  <%= link_to 'like it on facebook!', @photo.fb_url, target: '_blank'%>
+<% end %>
+
+<% if @photo.insta_url %>
+  <%= link_to 'like it on Instagram!', @photo.insta_url, target: '_blank'%>
+<% end %>
 
 <% if admin_signed_in? %>
   <button>
