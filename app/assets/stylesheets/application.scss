@@ -5,27 +5,56 @@ body{
   background-color: #000;
   color: #fff;
 }
+nav{
+  .navbar-nav{
+    margin: 0 auto;
+  }
 
-.bg-light {
+  .nav-item a {
+    color: #fff !important;
+    font-size: 1.5em;
+    margin: auto 20px;
+  }
+  
+  .nav-item a:hover{
+    color: #ddd !important;
+  }
+  
+  .nav-item.active a{
+    color: #999 !important;
+  }
+
+  .nav-item.active a:hover{
+    color: #ddd !important;
+  }
+  
+  .navbar-brand{
+    color: #fff !important;
+    font-size: 3em;
+  }
+  
+  .navbar-brand:hover{
+    color: #ddd !important;
+  }
+  
+}
+
+#nav-hr{
+  margin: 0 2.5vw;
+  margin-top: 20px;
+  height: 3px;
+  background-color: #fff;
+}
+
+nav.bg-dark{
   background-color: #000000 !important;
 }
 
-.nav-item a {
-  color: #fff !important;
+.admin-message {
+  background-color: #090;
+  text-align: center;
 }
 
-.nav-item a:hover{
-  color: #ddd !important;
-}
-
-.nav-item.active a{
-  color: #999 !important;
-}
-
-.navbar-light .navbar-brand{
-  color: #fff;
-}
-
-.navbar-light .navbar-brand:hover{
-  color: #ddd;
+.portfolio-card{
+  background-color: #000;
 }

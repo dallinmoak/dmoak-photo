@@ -10,7 +10,9 @@
 
   <body>
     <% if admin_signed_in? %>
-      <h1>⚠️You're in admin mode⚠️</h1>
+    <div class="admin-message">
+      <p>⚠️You're in admin mode⚠️</p>
+    </div>
     <% end %>
     <%= render 'shared/nav'%>
     <div class="container">
