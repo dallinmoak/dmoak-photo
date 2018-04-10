@@ -1,2 +1,31 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #000000 !important;
+}
+
+.nav-item a {
+  color: #fff !important;
+}
+
+.nav-item a:hover{
+  color: #ddd !important;
+}
+
+.nav-item.active a{
+  color: #999 !important;
+}
+
+.navbar-light .navbar-brand{
+  color: #fff;
+}
+
+.navbar-light .navbar-brand:hover{
+  color: #ddd;
+}

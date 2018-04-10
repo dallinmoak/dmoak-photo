@@ -3,7 +3,7 @@
   <head>
     <title>DmoakPhoto</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,6 +13,8 @@
       <h1>⚠️You're in admin mode⚠️</h1>
     <% end %>
     <%= render 'shared/nav'%>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
