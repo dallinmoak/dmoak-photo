@@ -1,9 +1,16 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+$main-text: #fff;
+$dark-text: #111;
+$dark-text-hover: #444;
+$main-text-hover: #bbb;
+$main-background: #000;
+$active-text: #888;
+
 body{
   font-family: 'Lato', sans-serif;
-  background-color: #000;
-  color: #fff;
+  background-color: $main-background;
+  color: $main-text;
 }
 nav{
   .navbar-nav{
@@ -11,30 +18,30 @@ nav{
   }
 
   .nav-item a {
-    color: #fff !important;
+    color: $main-text !important;
     font-size: 1.5em;
     margin: auto 20px;
   }
   
   .nav-item a:hover{
-    color: #ddd !important;
+    color: $main-text-hover !important;
   }
   
   .nav-item.active a{
-    color: #999 !important;
+    color: $active-text !important;
   }
 
   .nav-item.active a:hover{
-    color: #ddd !important;
+    color: $main-text-hover !important;
   }
   
   .navbar-brand{
-    color: #fff !important;
+    color: $main-text !important;
     font-size: 3em;
   }
   
   .navbar-brand:hover{
-    color: #ddd !important;
+    color: $main-text-hover !important;
   }
   
 }
@@ -43,11 +50,11 @@ nav{
   margin: 0 2.5vw;
   margin-top: 20px;
   height: 3px;
-  background-color: #fff;
+  background-color: $main-text;
 }
 
 nav.bg-dark{
-  background-color: #000000 !important;
+  background-color: $main-background !important;
 }
 
 .admin-message {
@@ -56,5 +63,23 @@ nav.bg-dark{
 }
 
 .portfolio-card{
-  background-color: #000;
+  background-color: $main-background;
+}
+
+.jumbotron{
+  background-color: $main-background;
+}
+
+.contact-links a{
+  color: $dark-text;
+  font-size: 3em;
+}
+
+.contact-links a:hover{
+  background-color: darken($main-text, 10%);
+  text-decoration: none;
+}
+
+.portfolio-img{
+  height: 100%;
 }
