@@ -65,7 +65,7 @@ nav.bg-dark{
 .portfolio-card{
   background-color: $main-background;
 }
-.portfolio-card h1{
+.portfolio-card h1,.portfolio-card p{
   color: $main-text;
 }
 
@@ -89,4 +89,8 @@ nav.bg-dark{
 
 .card{
   color: $dark-text;
+}
+
+.show-btn{
+  margin-top: 1em;
 }

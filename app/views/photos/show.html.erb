@@ -1,22 +1,19 @@
-<%= image_tag @photo.image_url %>
-<%= @photo.caption %>
-<% if @photo.fb_url %>
-  <%= link_to 'like it on facebook!', @photo.fb_url, target: '_blank'%>
-<% end %>
 
-<% if @photo.insta_url %>
-  <%= link_to 'like it on Instagram!', @photo.insta_url, target: '_blank'%>
-<% end %>
 
-<div class="admin">
-  <% if admin_signed_in? %>
-    <button>
-      <%= link_to 'Edit', edit_photo_path(@photo) %>
-    </button>
+<div class="card portfolio-card">
+  <p class="card-text"><%= @photo.caption %></p>
+  <%= image_tag @photo.image_url, class: "card-img-bottom", width: "100%"%>
+</div>
+<div>
+  <% if @photo.fb_url != "" %>
+    <%= link_to 'like it on facebook!', @photo.fb_url, target: '_blank', class: "btn btn-light"%>
+  <% end %>  
+  <% if @photo.insta_url != "" %>
+    <%= link_to 'like it on Instagram!', @photo.insta_url, target: '_blank', class: "btn btn-light"%>
   <% end %>
-  
-  <button>
-    <%= link_to 'Back', photos_path %>
-  </button>
 </div>
 
+<% if admin_signed_in? %>
+  <%= link_to 'Edit', edit_photo_path(@photo), class: "show-btn btn btn-outline-success btn-block" %>
+<% end %>
+<%= link_to 'Back', photos_path, class: "show-btn btn btn-outline-light btn-block"%>  
