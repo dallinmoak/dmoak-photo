@@ -1,4 +1,3 @@
 # Dallin Moak Photography
 
-uses postgres 
-
+look at my cute lil photo site! it'll be hosted soon!
