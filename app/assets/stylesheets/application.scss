@@ -65,6 +65,9 @@ nav.bg-dark{
 .portfolio-card{
   background-color: $main-background;
 }
+.portfolio-card h1{
+  color: $main-text;
+}
 
 .jumbotron{
   background-color: $main-background;
@@ -82,4 +85,8 @@ nav.bg-dark{
 
 .portfolio-img{
   height: 100%;
+}
+
+.card{
+  color: $dark-text;
 }

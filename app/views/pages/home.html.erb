@@ -1,5 +1,9 @@
-<h1> My most recent photo: </h1>
+<div class="card portfolio-card">
+  <div class="card-body">
+    <h1 class="card-title">Welcome to Dallin Moak Photography. Here's my latest photo:</h1>
+  </div>
+  <%= image_tag @photos.last.image_url, class: "card-img" %>
+</div>
 
-<%= image_tag @photos.last.image_url %>
 
 <%= link_to 'see them all!', photos_path %>

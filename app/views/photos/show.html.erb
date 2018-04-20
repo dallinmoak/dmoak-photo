@@ -8,12 +8,15 @@
   <%= link_to 'like it on Instagram!', @photo.insta_url, target: '_blank'%>
 <% end %>
 
-<% if admin_signed_in? %>
+<div class="admin">
+  <% if admin_signed_in? %>
+    <button>
+      <%= link_to 'Edit', edit_photo_path(@photo) %>
+    </button>
+  <% end %>
+  
   <button>
-    <%= link_to 'Edit', edit_photo_path(@photo) %>
+    <%= link_to 'Back', photos_path %>
   </button>
-<% end %>
+</div>
 
-<button>
-  <%= link_to 'Back', photos_path %>
-</button>
