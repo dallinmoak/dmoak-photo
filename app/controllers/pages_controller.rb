@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @photos = Photo.all
+    @photo = Photo.last
   end
   
   def contact

@@ -1,9 +1,13 @@
 <div class="card portfolio-card">
   <div class="card-body">
-    <h1 class="card-title">Welcome to Dallin Moak Photography. Here's my latest photo:</h1>
+    <h1 class="card-title">Welcome to Dallin Moak Photography.</h1>
+    <h3 class='card-title'>Here's my latest photo:</h3>
   </div>
-  <%= image_tag @photos.last.image_url, class: "card-img" %>
+  <div class="img-container">
+    <%= link_to (image_tag @photo.image_url, class: "card-img home-img"), @photo%>
+  </div>
 </div>
 
-
-<%= link_to 'see them all!', photos_path %>
+<div class="img-container">
+  <%= link_to 'see them all!', photos_path, class: "btn btn-outline-light btn-block home-btn" %>
+</div>

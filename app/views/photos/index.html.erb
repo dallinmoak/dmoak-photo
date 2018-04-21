@@ -1,4 +1,9 @@
+<% if admin_signed_in? %>
+  <%= link_to 'New Photo', new_photo_path, class: "btn btn-success btn-block new-btn" %>
+<% end %>
+  
   <div class="row">
+    <div class="card-deck">
       <% @photos.each do |photo| %>
         <div class="col-md-4">
           <div class="card portfolio-card">
@@ -8,15 +13,14 @@
             </div>
             <% if admin_signed_in? %>
               <%= link_to 'Edit', edit_photo_path(photo), class: "btn btn-outline-success btn-block" %>
-              <%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-success btn-block"%>
+              <%= link_to 'Delete', photo, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-block"%>
             <% end %>
           </div>
         </div>
       <% end %>
     </div>
+  </div>
 
-<% if admin_signed_in? %>
-  <%= link_to 'New Photo', new_photo_path %>
-<% end %>
+
 
   

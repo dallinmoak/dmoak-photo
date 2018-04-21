@@ -65,7 +65,9 @@ nav.bg-dark{
 .portfolio-card{
   background-color: $main-background;
 }
-.portfolio-card h1,.portfolio-card p{
+.portfolio-card h1,
+.portfolio-card p,
+.portfolio-card h3{
   color: $main-text;
 }
 
@@ -93,4 +95,24 @@ nav.bg-dark{
 
 .show-btn{
   margin-top: 1em;
+}
+
+.new-btn{
+  margin-bottom: 1em;
+}
+
+.home-img{
+  float: center;
+  width: 50%;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-btn{
+  margin-top: 1em;
+  width: 50%;
 }
