@@ -102,8 +102,10 @@ nav.bg-dark{
 }
 
 .home-img{
-  float: center;
-  width: 50%;
+  display: block;
+  max-height:80vh;
+  width: auto;
+  height: auto;
 }
 
 .img-container{
@@ -114,5 +116,4 @@ nav.bg-dark{
 
 .home-btn{
   margin-top: 1em;
-  width: 50%;
 }
